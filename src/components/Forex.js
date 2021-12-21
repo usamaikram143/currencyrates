@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useQuery,gql } from '@apollo/client';
-
-
+import './Forex.css';
+import forexImg from '../forex.jpg';
 const EXCHANGE_RATES = gql`
 query GetExchangeRates {
   rates(currency: "USD") {
@@ -17,9 +17,11 @@ function ExchangeRates (){
     if(error) return <p>There is somthing wrong, sorry for the inconvenient</p>
 
     return data.rates.map(({currency,rate}) => (
+        <div className='forex'>
         <div key={currency}> Currency Symbol : {currency}
         <div>
             Exchange Rate $1 = {rate}{currency}
+        </div>
         </div>
         </div>
     ));
@@ -27,7 +29,10 @@ function ExchangeRates (){
 
 const Forex = () => {
     return (
-        <div>
+        <div style={{backgroundImage: 'url('+forexImg+')', 
+        backgroundRepeat:'no-repeat',
+        backgroundAttachment: 'fixed'}} className="forexPage"
+        >
             <ExchangeRates/>
         </div>
     )

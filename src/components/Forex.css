@@ -1,0 +1,18 @@
+.forexPage{
+    background-color: lightblue;
+    text-align: center;
+}
+
+.forex{
+    display: flex;
+    padding: 20px;
+    color: lightblue;
+    font-size: large;
+}
+
+.forex:hover{
+    font-size: x-large;
+    color:lightskyblue;
+    font-weight: bold;
+}
+
