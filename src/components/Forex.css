@@ -8,6 +8,7 @@
     padding: 20px;
     color: lightblue;
     font-size: large;
+    width: 500px;
 }
 
 .forex:hover{
@@ -16,3 +17,11 @@
     font-weight: bold;
 }
 
+.heading{
+    font-size: 50px;
+    color: lightskyblue;
+    font-weight: bolder;
+    font-style: italic;
+    position: fixed;
+    padding-left: 50%;
+}

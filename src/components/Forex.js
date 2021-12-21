@@ -20,7 +20,7 @@ function ExchangeRates (){
         <div className='forex'>
         <div key={currency}> Currency Symbol : {currency}
         <div>
-            Exchange Rate $1 = {rate}{currency}
+            Exchange Rate $1 = {rate} {currency}
         </div>
         </div>
         </div>
@@ -33,6 +33,7 @@ const Forex = () => {
         backgroundRepeat:'no-repeat',
         backgroundAttachment: 'fixed'}} className="forexPage"
         >
+            <div className='heading'>FOREX</div>
             <ExchangeRates/>
         </div>
     )
