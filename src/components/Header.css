@@ -1,0 +1,12 @@
+nav{
+    background-color: gold;
+    min-height: 35px;
+    align-content: center;
+}
+
+.links{
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    margin-left: 15%;   
+}
