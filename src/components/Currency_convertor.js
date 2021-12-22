@@ -7,6 +7,8 @@ import 'react-dropdown/style.css';
 const Currency_convertor = () => {
   // Initializing all the state variables
   const [info, setInfo] = useState([]);
+  const [input,setInput]=useState(0);
+  const [output,setOutput]=useState(0);
   const [from, setFrom] = useState("usd");
   const [to, setTo] = useState("inr");
   const [options, setOptions] = useState([]);
@@ -22,13 +24,27 @@ const Currency_convertor = () => {
 
   useEffect(() => {
     setOptions(Object.keys(info));
+    convert();
   }, [info])
 
- 
+ function convert(){
+     var rate=info[to];
+     setOutput(input*rate);
+ }
+ function flip(){
+     var temp=from;
+     setFrom(to);
+     setTo(temp);
+ }
  
 
   return (
     <div>
+        <div>
+            <h3>Amount</h3>
+            <input type='text' placeholder='Enter the amount'></input>
+
+        </div>
         <h3>From</h3>
         <Dropdown options={options}
             onChange={(e) => { setFrom(e.value) }}
