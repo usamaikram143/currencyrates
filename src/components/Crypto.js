@@ -37,7 +37,8 @@ const Crypto = () => {
                   
                     <td className="row">
                     <a className="row" href={val.websiteUrl} >
-                  <img src={val.icon} alt="logo" width="30px" />
+                  
+                  <img src={val.icon} alt="logo" width="30px"/>
                   </a> {val.name}</td >
                     <td className="row">{val.symbol}</td >
                     <td className="row">$ {val.price.toFixed(2)}</td >
