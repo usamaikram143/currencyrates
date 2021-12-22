@@ -1,5 +1,7 @@
 import { React, useEffect, useState } from "react";
 import Axios from "axios";
+import './Crypto.css';
+import bgimage from '../bgimage.jpeg';
 
 const Crypto = () => {
     const [crypto, setCrypto] = useState([]);
@@ -13,28 +15,32 @@ const Crypto = () => {
   }, []);
 
   return (
-    <div>
-      <h1>All Cryptocurrencies</h1>
+  <div style={{backgroundImage: 'url('+bgimage+')', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed'}}>
+      <div className="heading">Cryptocurrencies</div>
       <table>
         <thead>
-            <tr>
+            <div className="column">
+              <div className="text">
                 <td>Name</td>
                 <td>Symbol</td>
                 <td>Price</td>
-            </tr>
+              </div>
+            </div>
         </thead>
         
         
         <tbody> 
             {crypto.map((val, key) => {
                 return (
-                <>
-                <tr id={key}>
+                <div className="column">
+                  <div className="text">
+                  <tr id={key}>
                     <td>{val.name}</td>
                     <td>{val.symbol}</td>
                     <td>$ {val.price}</td>
-                </tr>
-                </>
+                  </tr>
+                  </div>
+                </div>
                 );
             })}
         </tbody>

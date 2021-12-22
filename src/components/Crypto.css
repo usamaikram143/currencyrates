@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+
+.heading{
+    font-family: 'Love Light', cursive;
+    font-size: 4rem;
+    color: black;
+    position: fixed;
+    padding-left: 40%;
+    text-decoration: underline;  
+    font-weight: bold;  
+}
+.column{
+    padding-top: 6rem;
+    column-gap: 40px;
+    columns: 3;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: gold;
+    column-span: all;
+    
+   
+    
+    
+
+}
+
+.text{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: blanchedalmond;
+    
+    
+}
