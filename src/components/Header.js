@@ -5,10 +5,11 @@ import './Header.css';
 function Header(){
     return (
         <nav>
-            <NavLink to="/" className="links" > Home </NavLink>
-            <NavLink to="/forex" className="links"> Forex</NavLink>
-            <NavLink to="/crypto" className="links"> Crypto </NavLink>
-            <NavLink to="/currency_converter" className="links"> Currency Converter </NavLink>
+            <NavLink to="/"> 
+            <button type="button" className="button">Home </button> </NavLink>
+            <NavLink to="/forex"> <button type="button" className="button"> Forex </button></NavLink>
+            <NavLink to="/crypto" > <button type="button" className="button"> Crypto </button> </NavLink>
+            <NavLink to="/currency_converter" > <button type="button" className="button">Currency Converter </button> </NavLink>
         </nav>
     )
 }

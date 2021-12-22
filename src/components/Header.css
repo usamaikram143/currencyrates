@@ -1,12 +1,25 @@
 nav{
-    background-color: gold;
-    min-height: 35px;
-    align-content: center;
+    background-color: rgb(218, 190, 29);
+    min-height: 60px;
+    text-align: start;
+    
 }
 
-.links{
-    font-size: 18px;
+
+.button {
+    background-color: #2a94bebe;  
+    color: white;
+    padding: 10px 24px;
     text-align: center;
-    color: black;
-    margin-left: 15%;   
-}
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .button:hover{
+      background-color:honeydew;
+      color: black;
+  }
