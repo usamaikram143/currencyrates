@@ -19,11 +19,11 @@ const Crypto = () => {
       <div className="heading">Cryptocurrencies</div>
       <table>
         <thead>
-            <div className="column">
-              <div className="text">
-                <td>Name</td>
-                <td>Symbol</td>
-                <td>Price</td>
+            <div >
+              <div >
+                <td className="header">Name</td>
+                <td className="header">Symbol</td>
+                <td className="header">Price</td>
               </div>
             </div>
         </thead>
@@ -32,14 +32,17 @@ const Crypto = () => {
         <tbody> 
             {crypto.map((val, key) => {
                 return (
-                <div className="column">
-                  <div className="text">
+                <div>
                   <tr id={key}>
-                    <td>{val.name}</td>
-                    <td>{val.symbol}</td>
-                    <td>$ {val.price}</td>
+                  
+                    <td className="row">
+                    <a className="row" href={val.websiteUrl} >
+                  <img src={val.icon} alt="logo" width="30px" />
+                  </a> {val.name}</td >
+                    <td className="row">{val.symbol}</td >
+                    <td className="row">$ {val.price.toFixed(2)}</td >
                   </tr>
-                  </div>
+                  
                 </div>
                 );
             })}

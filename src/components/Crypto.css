@@ -1,33 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Love+Light&display=swap');
 
 .heading{
-    font-family: 'Love Light', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-size: 4rem;
-    color: black;
+    color: rgb(19, 16, 2);
     position: fixed;
     padding-left: 40%;
     text-decoration: underline;  
-    font-weight: bold;  
-}
-.column{
-    padding-top: 6rem;
-    column-gap: 40px;
-    columns: 3;
-    column-rule-style: solid;
-    column-rule-width: 1px;
-    column-rule-color: gold;
-    column-span: all;
-    
-   
-    
-    
-
+      
 }
 
-.text{
-    font-size: 1.3rem;
+.header{
+    font-size: 1.7rem;
     font-weight: bold;
+    color: gold;
+    padding-top: 6rem;
+    min-width: 250px;
+    
+}
+
+.row{
+    font-size: 1.2rem;
     color: blanchedalmond;
-    
-    
+    min-width: 250px;
+    text-justify: distribute;
+    padding-top: 20px;
 }
