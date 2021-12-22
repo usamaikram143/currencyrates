@@ -1,4 +1,4 @@
-#Currency Convertor
+Currency Convertor
 So we have build a Currency converor React App. It has been done in a group of two people(Usama Ikram and Abdul Wahab Malik).
 It has following components (pages):
 - Header: Header is the navigation bar on the top with has routing buttons to navigate to different pages. (Developed by Abdul)
@@ -8,7 +8,7 @@ It has following components (pages):
 - Currency_convertor: This page is also using an API get query to get different rates of currencies and using that we can convert different currencies from one to an other.
 
 
-#Future goals:
+Future goals:
 - Adding some other information along side just prices of difference currencies.
 - Making it look more nicer and eye catching, may be adding some animation.
 - Finishing up merging all the code to main and deploying the website.
