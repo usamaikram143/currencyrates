@@ -77,8 +77,6 @@ const Currency_convertor = () => {
             <h2>Converted Amount:</h2>
             <p>{input+" "+from+": "+output.toFixed(3)+" "+to}</p>
         </div>
-        
-        
     </div>
   );
 }
