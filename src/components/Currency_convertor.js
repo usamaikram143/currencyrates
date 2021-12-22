@@ -42,17 +42,28 @@ const Currency_convertor = () => {
     <div>
         <div>
             <h3>Amount</h3>
-            <input type='text' placeholder='Enter the amount'></input>
-
+            <input type='text' placeholder='Enter the amount'
+            onChange={(e) => setInput(e.target.value)}/>
         </div>
-        <h3>From</h3>
-        <Dropdown options={options}
-            onChange={(e) => { setFrom(e.value) }}
-            value={from} placeholder="From" />
-        <h3>To</h3>
-        <Dropdown options={options}
-            onChange={(e) => {setTo(e.value)}}
-            value={to} placeholder="To" />
+        <div>
+            <h3>From</h3>
+            <Dropdown options={options}
+                onChange={(e) => { setFrom(e.value) }}
+                value={from} placeholder="From" />
+        </div>
+
+        <div>
+            <h3>To</h3>
+            <Dropdown options={options}
+                onChange={(e) => {setTo(e.value)}}
+                value={to} placeholder="To" />
+        </div>
+
+        <div>
+            <button onClick={()=>{convert()}}>Convert</button>
+            <h2>Converted Amount:</h2>
+            <p>{input+" "+from+": "+output.toFixed(3)+" "+to}</p>
+        </div>
         
     </div>
   );
